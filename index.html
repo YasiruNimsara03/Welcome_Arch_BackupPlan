@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Management Faculty Map</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9fU9hxmFg0zQLMkx4A87rQrIzcUhFpPU&callback=initMap"
+    defer>
+  </script>
+</head>
+<body>
+  <div id="site-loading">
+    <img src="Assets/site-loading.gif" alt="">
+  </div>
+  <div id="msg-cont">
+    <div id="msg">
+      <div id="msg-txt"></div>
+    </div>
+  </div>
+  <div id="close-nav-cont">
+    <div id="loader_nav"><img src="Assets/big-loader.gif" alt=""></div>
+    <div id="nav_btn"><img src="Assets/close-nav.gif" alt=""></div>
+  </div>
+  <div id="ask-for-google-map-cont-bg">
+    <div id="ask-for-google-map-cont">
+    <div id="ask-for-google-map">
+      <div id="warning-img-cont">
+        <img src="Assets/warning.webp" alt="">
+      </div>
+      <div id="ask-text">
+        <div id="ask-text-cont">
+          <div id="ask-text-eng">Due to browser and privacy limitations, Websites cannot follow your live location accurately. For the best navigation experience, please open directions in Google Maps. <br>You can come back to this website anytime using your phone’s back button.</div><br>
+          <div id="ask-text-shl">බ්‍රවුසර් හා පෞද්ගලිකත්ව සීමා හේතුවෙන් වෙබ් අඩවි වලට ඔබගේ සජීවී ස්ථානය නිවැරදිව අනුගමනය කළ නොහැක. හොඳම මාර්ගෝපදේශන අත්දැකීම සඳහා Google Maps තුළින් මාර්ගෝපදේශනය විවෘත කරන්න. <br>ඔබගේ දුරකථනයේ Back බොත්තම භාවිතා කර ඔබට ඕනෑම වේලාවක මෙම වෙබ් අඩවියට නැවත පැමිණිය හැක.</div>
+        </div>
+      </div>
+      <div id="ask-btn-cont">
+        <div id="ask-btn">Navigate</div>
+        <div id="ask-close">Close</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="map"></div>
+  <div id="streetview-cont">
+    <div id="streetview">
+      <div id="video-loader">
+        <img src="Assets/StreetViewsVideoLoader.gif" alt="" id="video-loader-img">
+      </div>
+      <div id="video-title"></div>
+      <div id="streetview-tap-close-cont">
+        <div id="tap-to-close-cont"></div>
+        <div id="tap-to-close">Tap To Close</div>
+      </div>
+      <video id="streetview-video" muted playsinline autoplay></video>
+    </div>
+  </div>
+  <div id="_3d-cont">
+    <div id="_3d">
+      <div id="streetview-3d"></div>
+    </div>
+  </div>
+  <div id="cur-loc">
+    <img src="Assets/current_location2.png" alt="" id="cur-loc-img">
+  </div>
+  <div id="more-cont">
+    <img src="Assets/more.png" alt="">
+  </div>
+  <div id="more">
+    <div id="more-btn-cont">
+      <div class="more-btn" id="wus">WUS</div>
+      <div class="more-btn" id="thorana">Thorana</div>
+      <div class="more-btn" id="carPark">Car Park</div>
+      <div class="more-btn" id="washrooms">Washrooms</div>
+      <div class="more-btn" id="canteen">Canteens</div>
+      <div class="more-btn" id="auditorium">Auditorium</div>
+      <div class="more-btn" id="geography">Geography Building</div>
+      <div class="more-btn" id="facBoard">Faculty Board</div>
+      <div class="more-btn" id="boc">BOC ATM</div>
+      <div class="more-btn" id="peoples">People's ATM</div>
+      <div class="more-btn" id="senate">Senate</div>
+      <div class="more-btn" id="library">Library</div>
+      <div class="more-btn" id="gym">Gymnacium</div>
+      <div class="more-btn" id="ab">AB Hall</div>
+      <div class="more-btn" id="mainhall">Main Hall</div>
+      <div class="more-btn" id="ict">ICT Lab</div>
+      <div class="more-btn" id="ground">Ground</div>
+      <div class="more-btn" id="communication">Communication</div>
+      <div class="more-btn" id="jamesPeiris">James Peiris Hostel</div>
+      <div class="more-btn" id="sarasaviMedura">Sarasavi Medura Hostel</div>
+    </div>
+  </div>
+  <!-- AR -->
+  <div id="ani-cont">
+    <img src="Assets/ani2.png" alt="" id="ani-cont-img">
+  </div>
+  <script src="js/three.min.js" defer></script>
+  <script src="js/GLTFLoader.js" defer></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
